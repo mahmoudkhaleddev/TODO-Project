@@ -1,0 +1,437 @@
+@import url(https://fonts.bunny.net/css?family=baloo-bhaijaan-2:600);
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap'); */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #000000);
+    border-radius: 6px;
+}
+
+html {
+    font-family: 'Baloo Bhaijaan 2', display;
+
+}
+
+body {
+    font-family: 'Baloo Bhaijaan 2';
+    background-image: linear-gradient(to bottom, #E2E4E8, #949494c4);
+    /* background-image: url("z.jpg"); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    background-position: center;
+
+
+}
+
+.container {
+    height: 600px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.04); */
+    border-radius: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+
+
+
+
+
+}
+
+.button-time {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+
+    justify-content: space-between;
+
+
+}
+
+.button-time button {
+    padding: 8px 1px;
+    margin-top: 2px;
+    background-color: white;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Baloo Bhaijaan 2', display;
+    transition: all 0.1s;
+    cursor: pointer;
+
+
+
+}
+
+.button-time button:hover {
+    color: black;
+
+
+
+}
+
+.button-time .button-time-focused:enabled {
+    border-bottom: 2px rgb(163, 163, 163) solid;
+    color: black;
+
+}
+
+.button-time button:focus {
+    border-bottom: 2px rgb(163, 163, 163) solid;
+    color: black;
+
+
+
+}
+
+
+
+.container .linecontainer {
+    height: 1px;
+    display: flex;
+    background-color: rgb(130, 130, 130);
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.container .content {
+    background-color: #00000005;
+    height: 90.4%;
+    overflow: hidden;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 296px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    border-top: 1.3px solid #93939334;
+}
+
+
+.content .btn-add-task button {
+    font-family: inherit;
+    font-size: 11px;
+    background: #e5eefd;
+    color: #065AE8;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.2s;
+    margin: 10px;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.content .btn-add-task button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+.content .btn-add-task button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content .btn-add-task button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+
+}
+
+.content .btn-add-task button:hover svg {
+    transform: translateX(2em) scale(1.1);
+
+}
+
+.content .btn-add-task button:hover span {
+    transform: translateX(8em);
+}
+
+.content .btn-add-task button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+
+
+.top-item {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.Todays-Task {
+    width: 150px;
+    padding-left: 18px;
+    display: block;
+
+}
+
+.content .btn-add-task {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+}
+
+h3 {
+    margin-block-start: -0.2em;
+    margin-block-end: 0em;
+}
+
+h5 {
+    margin-block-start: -0.3em;
+    margin-block-end: 0em;
+    color: #939393;
+
+}
+
+.content .caterogize {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+.content .caterogize button {
+    background-color: #FAFAFA;
+    font-family: inherit;
+    font-size: 11px;
+    color: #065AE8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    gap: 3px;
+
+
+
+}
+
+.content .tasks {
+    height: 400px;
+    justify-content: center;
+    padding-top: 15px;
+    overflow: auto;
+    margin-left: 13px;
+
+}
+
+.content .task {
+    width: 270px;
+    height: 100px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 4%);
+    transition: ease 1.5s;
+
+
+
+
+}
+
+.hidden {
+    transition: ease 1s;
+    opacity: 0;
+    position: fixed;
+    transform: translateX(20em) ;
+}
+.textseen{
+    text-decoration:line-through;
+}
+
+
+.tasks .top-item-task {
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-around;
+
+}
+
+.tasks .top-item-task h1 {
+    font-size: 12px;
+
+}
+
+
+.tasks .top-item-task h3 {
+    font-size: 9px;
+    color: #c5c5c5;
+    margin-block-start: -1em;
+    margin-block-end: 0em;
+    font-weight: lighter;
+}
+
+.tasks .top-item-task .checktask {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    gap: 4px;
+}
+
+
+
+.tasks .top-item-task a {
+
+    border: 1px solid none;
+    background-color: #0860FB;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    font-family: inherit;
+    font-size: 10px;
+    transition: all 0.2s;
+    width: 18px;
+    height: 18px;
+
+}
+
+.tasks .top-item-task a:checked {
+
+
+    background-color: #0860FB;
+    border: 1px solid #0860FB;
+
+}
+
+.tasks .bottom-item-task {
+    display: flex;
+    justify-content: space-between;
+    /* padding-right:4px ; */
+
+
+}
+
+.tasks .bottom-item-task-text {
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+    color: #939393;
+
+
+}
+
+
+.tasks .bottom-item-task h1 {
+    font-size: 12px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0em;
+
+}
+
+.tasks .bottom-item-task .image {
+    display: flex;
+    justify-content: ends;
+    margin-right: 20px;
+}
+
+.tasks .bottom-item-task .image img {
+    width: 22px;
+    height: 22px;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-left: -8px;
+
+}
+
+
+.hr1 {
+    border-top: 1px solid rgb(104 104 104 / 7%);
+        width: 226px;
+}
+
+
+.input-task {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -59px;
+    padding: 10px;
+    border-radius: 18px;
+    background-color: #FAFAFA;
+
+
+}
+
+.input-task input {
+    font-family: inherit;
+    border-radius: 18px;
+    border: none;
+    padding: 8px 58px;
+    /* box-shadow: 0px 0px 15px 12px rgba(0, 0, 0, 0.05); */
+    background-color: #e1e0e0;
+
+}
+
+.input-task input:focus-visible {
+    outline: none;
+
+}
+
+.input-task a {
+    /* border: 1px solid none; */
+    position: absolute;
+
+    background-color: #0860FB;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.2s;
+    width: 30px;
+    height: 30px;
+    margin-right: -230px;
+
+
+}
+
+.input-task svg {
+    font-size: 10px;
+    /* width: 10px; */
+    height: 14px;
+    margin-right: 2px;
+
+
+}
